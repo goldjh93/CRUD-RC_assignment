@@ -1,4 +1,4 @@
-<h1>새 글 작성하기</h1>
+<h1>새글 작성하기</h1>
 <form action="{%url 'create'%}" method="POST">
     {% csrf_token %}
     제목 : <input type="text" name="title" />
@@ -7,3 +7,4 @@
 </form>
 
 
+<a href="{% url 'home' %}">홈</a>

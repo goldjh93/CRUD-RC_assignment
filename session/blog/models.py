@@ -11,3 +11,10 @@ class Blog(models.Model):
     
     def summary(self):
         return self.content[:100]
+    
+# class Search(models.Model):
+#     title_word = models.CharField(max_length=100)
+#     content_word = models.CharField(max_length=100)
+
+#     def __str__(self):
+#         return self.title_word
